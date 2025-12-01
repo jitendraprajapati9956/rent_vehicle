@@ -1,115 +1,97 @@
-🚗 Rent Vehicle – Online Vehicle Rental System
+# rent_vehicle
 
-A simple, user-friendly PHP-based Vehicle Rental Application that allows customers to book cars and drivers, and helps admins manage vehicles, bookings, payments, and user details.
+A simple vehicle rental management system built with PHP, HTML, CSS, and JavaScript. It allows customers to register, log in, browse available vehicles, book rentals, and manage reservations. There is also a driver module and an admin dashboard for managing vehicles, bookings, and user accounts.
 
-📌 Features
-Customer Panel
+## Features
 
-Create account / Login / Forgot password
+### **Customer Features**
 
-Browse available cars
+* Customer registration and login
+* Browse available vehicles
+* Book vehicles
+* Payment processing page
+* View and manage bookings
+* Forgot password functionality
 
-Book cars for rent
+### **Driver Features**
 
-Make online payment
+* Driver registration and login
+* Manage assigned rides
+* Edit account information
+* Forgot password functionality
 
-View booking history
+### **Admin Features**
 
-Contact support
+* Manage vehicles (add, edit, delete)
+* Manage customers and drivers
+* Manage bookings
+* View system dashboard
 
-Driver Panel
+## Project Structure
 
-Driver login / registration
+```
+root/
+ ├── admin/                 # Admin dashboard pages
+ ├── images/                # Images used throughout the system
+ ├── js/                    # JavaScript files
+ ├── styles/                # CSS stylesheets
+ ├── booking.php
+ ├── carrent.php
+ ├── contactUs.php
+ ├── customer_login.php
+ ├── customerregistration.php
+ ├── driver_dashboard.php
+ ├── driver_login.php
+ ├── driverregistration.php
+ ├── db.php                 # Database connection file
+ ├── rentvehicle.sql        # Database schema
+ └── index.php              # Homepage
+```
 
-Manage booking requests
+## Installation
 
-Update profile details
+### **1. Clone the repository**
 
-Dashboard for driver activity
+```
+git clone https://github.com/yourusername/rent_vehicle.git
+```
 
-Admin Panel
+### **2. Import the database**
 
-Add / edit / delete vehicles
+* Create a MySQL database (e.g., `rentvehicle_db`).
+* Import the `rentvehicle.sql` file into your database.
 
-Manage customers & drivers
+### **3. Configure the database**
 
-View all bookings
+Open `db.php` and update the database credentials:
 
-Approve / reject bookings
+```php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "rentvehicle_db";
+```
 
-Payment management
+### **4. Run the project**
 
-Content pages (About, Contact, Terms, etc.)
+Place the project folder inside your web server directory (e.g., **XAMPP/htdocs**).
 
-🛠️ Tech Stack
+Navigate to:
 
-Frontend: HTML, CSS, JavaScript, jQuery
+```
+http://localhost/rent_vehicle
+```
 
-Backend: PHP
+## Requirements
 
-Database: MySQL
+* PHP 7+
+* MySQL / MariaDB
+* Apache or any compatible server
 
-Hosting: Vercel (Static hosting, PHP rendered externally/local)
+## Screenshots
 
-📂 Project Structure
-rent_vehicle/
-│── admin/                 # Admin panel pages
-│── images/                # Images used in UI
-│── js/                    # JavaScript files
-│── styles/                # CSS files
-│── *.php                  # Website pages (customer, driver, auth, etc.)
-│── rentvehicle.sql        # Database file
-│── README.md
+(You can add screenshots here.)
 
-⚙️ Setup Instructions
-1. Clone the repository
-git clone https://github.com/your-username/rent_vehicle.git
+## License
 
-2. Import the database
-
-Open phpMyAdmin
-
-Create a database, e.g., rentvehicle
-
-Import rentvehicle.sql
-
-3. Configure database
-
-Update db.php:
-
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db = "rentvehicle";
-$conn = mysqli_connect($host, $user, $pass, $db);
-
-4. Run the project
-
-Place the folder inside XAMPP/htdocs
-Open in browser:
-
-http://localhost/rent_vehicle/
-
-🔐 Login Details (Sample)
-Admin
-
-URL: /admin/admin_login.php
-
-Use credentials you set in DB
-
-Customer / Driver
-
-Register from UI → Login
-
-🌐 Live Demo
-
-🔗 https://rent-vehicle-roan.vercel.app
-
-🤝 Contributing
-
-Pull requests are welcome.
-For major changes, please open an issue first to discuss what you’d like to change.
-
-📄 License
-
-This project is open-source and free to use for learning purposes.
+This project is open-source and free to use for learning or improvement.

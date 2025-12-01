@@ -53,7 +53,7 @@ root/
 ### **1. Clone the repository**
 
 ```
-git clone https://github.com/yourusername/rent_vehicle.git
+git clone https://github.com/jitendraprajapati9956/rent_vehicle.git
 ```
 
 ### **2. Import the database**
@@ -88,9 +88,6 @@ http://localhost/rent_vehicle
 * MySQL / MariaDB
 * Apache or any compatible server
 
-## Screenshots
-
-(You can add screenshots here.)
 
 ## License
 
